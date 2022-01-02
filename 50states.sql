@@ -1,14 +1,14 @@
 CREATE TABLE state (
-    state_name VARCHAR(14) NOT NULL PRIMARY KEY;
-    abreviation VARCHAR(2) NOT NULL PRIMARY KEY;
-    state_hood TINYINT(4) NOT NULL;
-    capital VARCHAR(14) NOT NULL;
-    capital_since TINYINT(4) NOT NULL;
-    area TINYINT(6) NOT NULL;
-    pop TINYINT(9) NOT NULL;
-    metro TINYINT(9) NOT NULL;
-    rank_state TINYINT(2) NOT NULL;
-    rank_us TINYINT(3);
+    state_name VARCHAR(14) NOT NULL PRIMARY KEY,
+    abreviation VARCHAR(2) NOT NULL PRIMARY KEY,
+    state_hood TINYINT(4) NOT NULL,
+    capital VARCHAR(14) NOT NULL,
+    capital_since TINYINT(4) NOT NULL,
+    area TINYINT(6) NOT NULL,
+    pop TINYINT(9) NOT NULL,
+    metro TINYINT(9) NOT NULL,
+    rank_state TINYINT(2) NOT NULL,
+    rank_us TINYINT(3),
 );
 
 INSERT INTO state VALUES
