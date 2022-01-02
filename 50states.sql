@@ -1,14 +1,18 @@
+CREATE DATABASE 50states;
+
+USE 50states;
+
 CREATE TABLE state (
-    state_name VARCHAR(14) NOT NULL PRIMARY KEY,
-    abreviation VARCHAR(2) NOT NULL PRIMARY KEY,
-    state_hood TINYINT(4) NOT NULL,
+    state_name VARCHAR(14) NOT NULL,
+    abreviation VARCHAR(2) NOT NULL,
+    state_hood VARCHAR(4) NOT NULL,
     capital VARCHAR(14) NOT NULL,
-    capital_since TINYINT(4) NOT NULL,
-    area TINYINT(6) NOT NULL,
-    pop TINYINT(9) NOT NULL,
-    metro TINYINT(9) NOT NULL,
-    rank_state TINYINT(2) NOT NULL,
-    rank_us TINYINT(3),
+    capital_since VARCHAR(4) NOT NULL,
+    area VARCHAR(6) NOT NULL,
+    pop VARCHAR(9) NOT NULL,
+    metro VARCHAR(9) NOT NULL,
+    rank_state VARCHAR(2) NOT NULL,
+    PRIMARY KEY(state_name, abreviation)
 );
 
 INSERT INTO state VALUES
