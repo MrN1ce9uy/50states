@@ -7,7 +7,7 @@
 <body>
 <p>
 <?php
-$connection = mysql_connect("localhost","admin1","P@ssw0rd";
+$connection = mysql_connect("localhost","user","password";
 
 mysql_select_db("50states");
 
