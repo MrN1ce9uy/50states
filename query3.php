@@ -11,7 +11,7 @@ $connection = mysql_connect("localhost","user","password";
 
 mysql_select_db("50states");
 
-$result = ("SELECT state_name, abreviation
+$result = ("SELECT state_name, abbreviation
 			FROM state", $connection);
 
 while ($row = mysql_fetch_array($result, MYSQL_NUM))
