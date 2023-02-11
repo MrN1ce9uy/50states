@@ -11,7 +11,7 @@ $connection = mysql_connect("localhost","user","password";
 
 mysql_select_db("50states");
 
-$result = ("SELECT * FROM state", $connection);
+$result = mysql_query("SELECT * FROM state", $connection);
 
 while ($row = mysql_fetch_array($result, MYSQL_NUM))
 {
